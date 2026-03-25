@@ -1,0 +1,135 @@
+<html>
+<head>
+    <title>TaskFlow Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo-section">
+            <span class="logo-circle">TF</span>
+            <div class="brand-text">
+                <h1>TaskFlow (Section A)</h1>
+                <p>Demo Project | CS4717</p>
+            </div>
+        </div>
+        <button class="btn-logout">Logout</button>
+    </header>
+
+    <nav class="sub-nav">
+        <a href="#" class="active">Dashboard</a>
+        <a href="#">Tasks</a>
+        <a href="#">New Task</a>
+    </nav>
+
+    <main class="dashboard-container">
+        <div class="ui-label">
+            <h2>Phase 1 UI</h2>
+        </div>
+
+        <div class="grid-layout">
+            <section class="card">
+                <h3>My Tasks</h3>
+                
+                
+                <div id="taskList" class="task-container">
+                    <div class="task-box">
+                        <div class="task-left">
+                            <h4>Task #1: Presentation</h4>
+                            <p>Status: Done</p>
+                        </div>
+                        <div class="task-right">
+                            <span class="due-date">due date: 2026-03-24</span>
+                            <button class="btn-delete">Delete</button>
+                        </div>
+                    </div>
+                    <div class="task-box">
+                        <div class="task-left">
+                            <h4>Task #2: Bonus Task</h4>
+                            <p>Status: Done</p>
+                        </div>
+                        <div class="task-right">
+                            <span class="due-date">due date: 2026-03-25</span>
+                            <button class="btn-delete">Delete</button>
+                        </div>
+                    </div>
+                    <div class="task-box">
+                        <div class="task-left">
+                            <h4>Task #3: Assignmnet 1</h4>
+                            <p>Status: In Progress</p>
+                        </div>
+                        <div class="task-right">
+                            <span class="due-date">due date: 2026-03-26</span>
+                            <button class="btn-delete">Delete</button>
+                        </div>
+                    </div>
+                    <div class="task-box">
+                        <div class="task-left">
+                            <h4>Task #4: Quiz 1</h4>
+                            <p>Status: Todo</p>
+                        </div>
+                        <div class="task-right">
+                            <span class="due-date">due date: 2026-03-26</span>
+                            <button class="btn-delete">Delete</button>
+                        </div>
+                    </div>
+                    <div class="task-box">
+                        <div class="task-left">
+                            <h4>Task #5: Final Project</h4>
+                            <p>Status: Todo</p>
+                        </div>
+                        <div class="task-right">
+                            <span class="due-date">due date: 2026-03-26</span>
+                            <button class="btn-delete">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <h3>Create Task</h3>
+                <form id="taskForm">
+                    <div class="field">
+                        <label for="taskTitle">Title</label>
+                        <input type="text" id="taskTitle" placeholder="Enter title...">
+                        <span id="errorMsg" class="error"></span>
+                    </div>
+
+                    <div class="field">
+                        <label for="taskDescription">Description</label>
+                        <input type="text" id="taskDescription" placeholder="Enter description...">
+                    </div>
+
+                    <div class="field">
+                        <label for="taskStatus">Status</label>
+                        <select id="taskStatus">
+                            <option value="Todo">Todo</option>
+                            <option value="In Progress">In Progress</option>
+                            <option value="Done">Done</option>
+                        </select>
+                    </div>
+
+                   <div class="field">
+                        <label for="taskDate">Description</label>
+                        <input type="date" id="taskDate">
+                    </div>
+
+                    <div class="form-btns">
+                        <button type="button" id="clearBtn" class="btn-secondary">Clear</button>
+                        <button type="submit" class="btn-primary">Create Task</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+    <p>&copy; 2026 TaskFlow | CS4717 Web Technologies I</p>
+    
+    <div class="footer-right">
+        <a href="#">Privacy</a>
+    </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
