@@ -266,20 +266,31 @@ input[type="date"] {
 
 @media (max-width: 900px) {
     body {
-         overflow-y: auto;
+        overflow-y: auto;
         height: auto; 
     }
     .grid-layout { 
         flex-direction: column; 
     }
     .dashboard-container { 
-        width: 95%;
-        padding: 20px 0;
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+    .card {
+        width: 100%;
+        box-sizing: border-box;
     }
     .form-btns { 
         justify-content: space-between; 
     }
     .btn-primary, .btn-secondary { 
         flex: 1; 
+    }
+    .main-header {
+        padding: 10px 15px;
+    }
+    .sub-nav {
+        padding: 0 15px;
     }
 }
