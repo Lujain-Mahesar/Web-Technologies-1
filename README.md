@@ -16,5 +16,7 @@ Converted TaskFlow from Phase 1 HTML/CSS/JS into a React + TypeScript applicatio
 
 ### How to Run
 cd phase2
+
 pnpm install
+
 pnpm run dev
